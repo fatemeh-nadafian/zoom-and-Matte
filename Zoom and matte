@@ -15,7 +15,7 @@ def mouse_callback(event,x,y,flags,param):                                      
        zoom=cv2.resize(masked,(masked.shape[1]+500,masked.shape[0]+550))                # Zoom in on the selected square 
        cv2.imshow('zoom',zoom)                                                          # Show zoomed image 
 
-image=cv2.imread('photo4.jpg')                                                          # Capture input image                       
+image=cv2.imread('image name.image format')                                                          # Capture input image                       
 r = 350.0 / image.shape[1]                                                              #Line 17 to 22 - change the dimensions of the image by one ratio
 dim = (150, int(image.shape[0] * r))
 resize = cv2.resize(image, dim, interpolation = cv2.INTER_AREA)
